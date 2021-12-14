@@ -1,0 +1,16 @@
+domain: test-operator
+layout:
+- go.kubebuilder.io/v3
+projectName: testoperator
+repo: github.com/ryan2333/testOperator
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: test-operator
+  group: webapp
+  kind: Guestbook
+  path: github.com/ryan2333/testOperator/api/v1
+  version: v1
+version: "3"
